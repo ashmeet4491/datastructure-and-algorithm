@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<stdlib.h>
+int fabonacci(int n)
+{ 
+      if(n==0)
+    {
+      return  0;
+    }
+    else   if(n==1)
+    {
+      return  1;
+    }
+    else
+    {
+      return fabonacci(n-2)+fabonacci(n-1);  
+    }
+}
+struct Node
+{
+    int data;
+   struct Node* link;
+};
+int main()
+{
+    int n,num,j;
+  scanf("%d",&n);
+  scanf("%d",&num);
+  struct Node* head;
+  struct Node* temp;
+   
+   
+  for(int i=0;i<num;++i){
+      struct Node* temp2=(struct Node*)malloc(sizeof(struct Node*));
+     temp2->data=fabonacci(i);
+     
+      if(i==0)
+      {
+          
+          head=temp2;
+      }
+      else
+      {
+          temp=head;
+          for(j=0;j<i-1;++j)
+          {
+              temp=temp->link;
+          }
+           temp->link=temp2;
+          temp2->link=NULL;
+      }
+  }
+temp=head;
+ while(temp!=NULL)
+  {
+   printf("%d",temp->data);
+   temp=temp->link;
+  }
+  return 0;
+}
+
+
