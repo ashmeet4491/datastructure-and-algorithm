@@ -1,0 +1,17 @@
+//trees is  used to represent heirarchichal form of data.
+//it is a non linear data structure
+//it can contain data as well as it can contain link to some other nodes
+//a Binary tree contains Parent,Root,children and leaf node.
+//leaf node has no children.
+//we can go from up to down but not from down to up.
+//the root trees is a recursive data structure.
+//trees with n nodes 
+//the edes are n-1
+//depth of the node in  a tree is a connection from root to th tree.
+//height of tree is no of longest path from node to leaf .
+//binary tree should have atmost 2 children.
+//a strict binary tree can have 0 or more children
+//complete binary tree -all node except the last level are completely filled and the left as possible.
+//maximum no of node at any level is 2 to the power level 
+//perfect binary tree if all the level are filled.
+//max no of nodes with height h is 2 
