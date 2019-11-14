@@ -1,0 +1,15 @@
+Data structure is a building block in computer science and good know of data structure is must to  develop software system.
+city map,dictionary(sorting),effictelely able to solve
+A data structure is a way to organise and set set data in such a way that it can be used efficiently.
+Abstract data types-
+List-Collection of object of same data types.
+1).Store a no of object of same data types in a list
+2).read/modify
+an array is created (if somehow the array got filled we will not be able to store the elements in an array).in this case ,we will have to 
+create the array and copy the elements from the previous array.and then add the elments.
+ it is very costly.
+so when the array is full we will have to create the array of double the size .
+read write element from array will be O(1).
+inserting an element will be O(n).
+removing an element will be O(n).//n is the size of array.
+add-O(n).
