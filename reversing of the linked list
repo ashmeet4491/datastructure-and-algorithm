@@ -1,0 +1,84 @@
+#include <iostream>
+
+using namespace std;
+struct Node
+{
+    int data;
+    Node* next;
+};
+Node* head=NULL;
+void insert(int number)
+{
+    Node* temp;
+    if(head==NULL)
+    {
+      temp=new Node();
+      temp->data=number;
+      temp->next=NULL;
+      head=temp;
+    }
+    else
+    {
+        temp=head;
+        while(temp->next!=NULL)
+        {
+            temp=temp->next;
+        }
+      Node* temp1=new Node();
+        temp1->data=number;
+        temp1->next=NULL;
+        temp->next=temp1;
+        
+        
+        
+    }
+}
+    void print()
+    {
+        Node* temp;
+        temp=head;
+        while(temp!=NULL)
+        {
+            cout<<temp->data;
+            temp=temp->next;
+            
+        }
+    }
+    void reverse()
+    {
+        Node* temp;
+        Node* prev;
+        Node* after;
+        temp=head;
+        prev=NULL;
+        while(temp!=NULL)
+        {
+            
+            after=temp->next;
+            temp->next=prev;
+            prev=temp;
+            temp=after;
+            
+        }
+        
+        head=prev;
+    }
+
+int main()
+{
+   int n;
+   int position;
+   cin>>n;
+   int number;
+   while(n>0)
+   {
+       cin>>number;
+       insert(number);
+       --n;
+   }
+   print();
+   
+   reverse();
+   cout<<"the reversing of the linked list";
+   print();
+}
