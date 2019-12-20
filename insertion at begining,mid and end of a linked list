@@ -1,0 +1,114 @@
+#include <iostream>
+
+using namespace std;
+struct Node
+{
+    int data;
+    Node* next;
+};
+Node* head=NULL;
+void insert(int number)
+{
+    Node* temp;
+    if(head==NULL)
+    {
+      temp=new Node();
+      temp->data=number;
+      temp->next=NULL;
+      head=temp;
+    }
+    else
+    {
+        temp=head;
+        while(temp->next!=NULL)
+        {
+            temp=temp->next;
+        }
+      Node* temp1=new Node();
+        temp1->data=number;
+        temp1->next=NULL;
+        temp->next=temp1;
+        
+        
+        
+    }
+}
+    void print()
+    {
+        Node* temp;
+        temp=head;
+        while(temp!=NULL)
+        {
+            cout<<temp->data<<endl;
+            temp=temp->next;
+            
+        }
+    }
+    void front(int number)
+    {
+        Node* temp;
+        temp=new Node();
+        temp->data=number;
+        temp->next=head;
+        head=temp;
+        
+    }
+    void insertatposition(int number,int position)
+    {
+        Node* temp;
+        temp=head;
+        if(position==1)
+        {
+             Node* temp1;
+             temp1=new Node();
+        temp1->data=number;
+        temp1->next=temp;
+        head=temp1;
+            
+        }
+        else{
+        for(int i=1;i<position-1
+        ;++i)
+        {
+            temp=temp->next;
+        }
+        Node* temp1;
+        temp1=new Node();
+        temp1->data=number;
+        temp1->next=temp->next;
+        temp->next=temp1;
+    }}
+
+int main()
+{
+   int n;
+   int position;
+   cin>>n;
+   int number;
+   while(n>0)
+   {
+       cin>>number;
+       insert(number);
+       --n;
+   }
+   print();
+   cout<<"enter the number at the front";
+   cin>>number;
+   front(number);
+    cout<<"enter the number at the front";
+   cin>>number;
+   front(number);
+   print();
+   cout<<"enter the number of times";
+   cin>>n;
+   while(n>0){
+   cout<<"enter the number and the position";
+   cin>>number>>position;
+   insertatposition(number,position);
+   --n;
+   }
+   print();
+   
+   
+  
+}
