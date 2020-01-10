@@ -1,0 +1,19 @@
+the way you organise data in the main memory during execution time of a program is called data structure
+the memory consist of a program code and and the data
+so the way u organise your data in the program so that it can be utilized by the program code
+List of datastructures
+1).array
+2).matrices
+3).Linkd list
+4).Stack
+5).queues
+6).trees
+7).graph
+8).hashing
+9).recursion
+10).sorting
+Arrays ,matrices, linked list are called the physical data structures they define how the data structure are defined in the memory
+Stack,queues,trees,graph and hashing are logical data structures and they defines how the arrangemnts should be utilized
+
+
+
