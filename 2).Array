@@ -1,0 +1,2 @@
+int A[5]//this is declarationtia ini of a array
+int A[5]={0,1,4,6,7}//this islisation of array
