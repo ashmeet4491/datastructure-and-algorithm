@@ -1,0 +1,15 @@
+in c++,no of bytes taken depends on the compiler
+when we declare the elements in the memory,the memory is associated with stack
+how many bytes of memory is required is decided by the compile time so it is static memory allocation
+Heap is a term used for unorganised memory
+stack memory is organized(how the activation memory is made and destroyed)
+heap memory is considered as a resource(when u require the memory u take and when u dont require u can release the memory)
+programme cannot directly access heap memory.it can access anything inside heap memory and it can access anything inside code
+but programme can access heap memory using pointer
+new means memory is allocated in heap
+program cant access directly heap so using pointer it can access heap.
+in c++ we use p=new Int[5];
+in c we use p=(int *)malloc(2*5);
+for deleting of array we use 
+delete []b
+
