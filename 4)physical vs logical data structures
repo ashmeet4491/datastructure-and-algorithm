@@ -1,3 +1,17 @@
 physical data structures
 a).Array
 b).linked list
+Logical data structures
+a).stack
+b).queues
+c).trees
+d).graph
+f).hash table
+physical data structure actually holds the data in the memory
+stacks and queues are linear data structures
+trees graph and hash table are non linear data structures
+Hah table may be linear or tabular data sturucture
+Stacks works in LIFO 
+and queues works in FIFO
+the logical data structures are implemented using phusical data structure
+
