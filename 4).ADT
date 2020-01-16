@@ -1,0 +1,24 @@
+what does ADT MEANS ?
+1).Representtion of data
+2).operation on data
+Abstract means hiding internal details
+Representation of a list is done by using
+a).Array
+b).Linked list
+List is a abstract data types
+and we are having representation of data and the operation on the data
+where the representation includes-
+a).space for storing elements
+b).capacity
+c).sizemeans on 
+and operation include-
+a).add
+b).remove 
+c).search
+abstract data types means  define the data and the operations of data and we need not worry about internal details
+we will try to represent these things using  abstract datatypes
+operations include
+a).add
+b).adding an element at a given index
+c).
+
