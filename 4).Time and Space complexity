@@ -1,0 +1,43 @@
+Time complexity-
+the time complexity depends on the procedure u are adopting to complete a task
+for example 
+for(i=n;i>1;i=i/2)
+{
+}
+Time complexity is logbase2n
+/////////////////////////
+finding the time complexity
+for swap function-
+void swap(x,y)
+{
+t=x;
+x=y;
+y=t;
+}
+there are three statement in the above swap functions
+so it takes d also 3 sec to complete
+so f(n)=3,
+since 3 is constant here and also 3 x n^0
+so this is O(n^0)=O(1)
+/////////////////////
+for sum function
+int sum(int A[],int n)
+{
+int s,i;
+s=0;
+for(i=0;i<n;++i)
+{
+S=S+A[i];
+}
+return S;
+}
+i=0 will execute 1
+++i will execute n times
+i<n will be executing n+1(one extra because it fails one extra time)
+here we will do n+1 times
+s=s+a[i] will execute n times 
+return s will execute 1 time
+s=0 will also execute one time
+total 2n+3
+means O(n^1)
+O(n)
