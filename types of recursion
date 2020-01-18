@@ -1,0 +1,21 @@
+there are 5 types of recursion
+a).tail recursion
+b).head recursion
+c).tree recursion
+d).Indirect recursion
+e).nested recursion
+tail recursion is that recursion in which the last statement is the calling statement itself then it is the tail recursion
+in tail recursion the addition is performed at return time
+tail recursion means it doesn't have to perform any operation  just have to written one calling statement
+
+head recursion means that that the calling statement will be the first staement
+tree recursion is that recursion in which the function is calling itself more than one time
+the order of tree recursion is O(2)
+Space complexity-the space occupiesd in the stack
+Indirect recurion is that recursion in which the function is calling a functions in cycle
+suppose A is calling B and B is calling C and then C is calling A again then that function becomes a cycle and then that functio is called 
+indirect recursion
+Nested recursion is recursion inside Recursion
+
+
+
