@@ -1,0 +1,26 @@
+static variables is not created inside  the stack section .instead it is created inside the code section
+if it is inside the function it is not created everytime instead it is just creted one time when the program gets loadedt
+n is having multiple copies in th stack 
+but the static varial is not having any copies
+
+
+int fun(int n)
+{
+ static int x=0;
+ if(n>0)
+ {
+ x++;
+ return fun(n-1)+x;
+ }
+ return 0;
+}
+int main() {
+ int r;
+ r=fun(5);
+ printf("%d\n",r);
+
+ r=fun(5);
+ printf("%d\n",r);
+
+ return 0;
+}
